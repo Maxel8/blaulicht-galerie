@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ff0000">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="manifest" href="manifest.json">
+    <title>Blaulicht-Galerie</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        img {
+            max-height: 300px;
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            display: block;
+            border-radius: 10px;
+}
+
+    </style>
+</head>
+<body>
+
+    <h1>Blaulicht-Galerie</h1>
+  <h2>Feuerwehr</h2>
+  <h3>Berufsfeuerwehr Köln 2</h3>
+  <div>
+    <img src="RW-Köln.JPEG">
+    <p>Florian Köln 2-RW-1</p>
+  </div>
+
+<br>
+<br>
+
+  <div>
+    <img src="DLK-Köln.PNG">
+    <p>Florian Köln 2-DLK-1</p>
+  </div>
+
+  <br><br>
+
+  <h3>Freiwillige Feuerwehr Taunusstein-Hahn</h3>
+
+  <div>
+    <img src="StLF/StLf_1b.JPEG">
+    <p>Florian Taunusstein 2-40</p>
+  </div>
+
+<br>
+<br>
+
+  <h2>Polizei</h2>
+  <div>
+    <img src="BePolv2-mitBL.png">
+    <p>FuStW der Polizei</p>
+  </div>
+ <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("service-worker.js")
+        .then(() => console.log("✅ Service Worker registriert"))
+        .catch(err => console.error("❌ Service Worker Fehler", err));
+    }
+  </script>
+</body>
+</html>
