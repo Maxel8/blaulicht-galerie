@@ -1,6 +1,6 @@
 {
   "name": "Blaulicht Galerie",
-  "short_name": "Galerie",
+  "short_name": "Blaulicht-Galerie",
   "start_url": "index.html",
   "display": "standalone",
   "background_color": "#ffffff",
