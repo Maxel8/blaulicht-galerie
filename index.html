@@ -38,9 +38,15 @@
     }
 
         img:active {
-  transform: scale(1.8);
+  /*transform: scale(1.8);
   transition: transform 0.2s ease;
-  z-index: 100;
+  z-index: 100;*/
+            position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(2.5);
+  z-index: 9999;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -92,7 +98,7 @@
 
     <br>
     <br>
-    <p class="version">v1.1.0 - © Maximilian 2025</p>
+    <p class="version">v1.1.1 - © Maximilian 2025</p>
  <script>
     function toggleMode() {
       document.body.classList.toggle('dark-mode');
