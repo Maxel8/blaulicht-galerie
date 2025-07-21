@@ -6,7 +6,7 @@ self.addEventListener("install", event => {
         "/galerie.html",
         "/RW-Köln.JPEG",
         "/DLK-Köln.PNG",
-        "/StLf_1.JPEG",
+        "/StLf_1b.JPEG",
         "/BePolv2-mitBL.png",
         "/manifest.json",
         "/service-worker.js"
