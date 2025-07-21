@@ -7,12 +7,21 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="manifest" href="manifest.json">
-    <title>Blaulicht-Galerie</title>
+    <title>Blaulicht Shots</title>
 <link rel="icon" href="icon.png" type="image/png">
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
-        }
+            background-color: white;
+      color: black;
+      transition: all 0.3s ease;
+    }
+
+    .dark-mode {
+      background-color: black;
+      color: white;
+    }
+      
         img {
             max-height: 300px;
             width: auto;
@@ -30,7 +39,11 @@
 </head>
 <body>
 
-    <h1>Blaulicht-Galerie</h1>
+<header>
+    <h1>Blaulicht Shots</h1>
+    <button onclick="toggleMode()">Modus wechseln</button>
+</header>
+
   <h2>Feuerwehr</h2>
   <h3>Berufsfeuerwehr Köln 2</h3>
   <div>
@@ -68,6 +81,9 @@
     <br>
     <p class="version">v1.0 © Maximilian 2025</p>
  <script>
+    function toggleMode() {
+      document.body.classList.toggle('dark-mode');
+    }
     if ("serviceWorker" in navigator) {
       navigator.serviceWorker.register("service-worker.js")
         .then(() => console.log("✅ Service Worker registriert"))
