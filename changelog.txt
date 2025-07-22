@@ -1,0 +1,16 @@
+# Changelog
+
+## [v1.1.1] – 2025-07-21
+- Bildvergrößerung optimiert
+
+## [v1.1.0] – 2025-07-21
+- Bildvergrößerung hinzugefügt
+
+## [v1.0.2] – 2025-07-21
+- Hover-Effekt für Bilder hinzugefügt
+
+## [v1.0.1] – 2025-07-21
+- Dark-Mode hinzugefügt
+
+## [v1.0.0] – 2025-07-21
+- Erste Galerie mit PWA-Support, Bildern, Beschreibung
