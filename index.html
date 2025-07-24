@@ -48,6 +48,41 @@
   z-index: 9999;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
+header {
+  position: sticky;
+  top: 0;
+  background: rgba(255, 0, 0, 0.9); /* Feuerwehr-Rot mit Transparenz */
+  color: white;
+  padding: 10px 20px;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8em;
+}
+
+#toggle-button {
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  padding: 6px 12px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#toggle-button:hover {
+  background-color: #ccc;
+}
 
 
         
@@ -59,9 +94,12 @@
 <body>
 
 <header>
+  <div class="header-content">
     <h1>Blaulicht Shots</h1>
-    <button onclick="toggleMode()">Modus wechseln</button>
+    <button onclick="toggleMode()" id="toggle-button">🌗</button>
+  </div>
 </header>
+
 
   <h2>Feuerwehr</h2>
   <h3>Berufsfeuerwehr Köln 2</h3>
@@ -98,7 +136,7 @@
 
     <br>
     <br>
-    <p class="version">v1.1.1 - © Maximilian 2025</p>
+    <p class="version">v1.2.0 - © Maximilian 2025</p>
  <script>
     function toggleMode() {
       document.body.classList.toggle('dark-mode');
