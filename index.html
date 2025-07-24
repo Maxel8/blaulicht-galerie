@@ -112,7 +112,7 @@ header h1 {
     background-color: rgba(255, 0, 0, 0.95);
     position: absolute;
     top: 60px;
-    right: 10px;
+    left: 10px; /* von rechts -> nach links geändert */
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.5);
@@ -127,6 +127,7 @@ header h1 {
   }
 }
 
+
         
     </style>
 
@@ -137,21 +138,23 @@ header h1 {
 
 <header>
   <div class="header-content">
-    <nav class="nav-links" id="nav-links">
-      <a href="#feuerwehr">🚒 Feuerwehr</a>
-      <a href="#polizei">🚓 Polizei</a>
-    </nav>
+    <!-- Burger-Menü-Button links -->
+    <button id="menu-toggle" aria-label="Navigation umschalten">☰</button>
 
-      <button id="menu-toggle" aria-label="Navigation umschalten">☰</button>
-      
-      <h1>Blaulicht Shots</h1>
-    
-   
+    <!-- Überschrift -->
+    <h1>Blaulicht Shots</h1>
 
-    
+    <!-- Darkmode rechts -->
     <button onclick="toggleMode()" id="toggle-button">🌗</button>
   </div>
+
+  <!-- Navigation außerhalb von .header-content -->
+  <nav class="nav-links" id="nav-links">
+    <a href="#feuerwehr">🚒 Feuerwehr</a>
+    <a href="#polizei">🚓 Polizei</a>
+  </nav>
 </header>
+
 
 
   <h2 id="feuerwehr">Feuerwehr</h2>
