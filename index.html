@@ -93,6 +93,36 @@ header h1 {
   margin-bottom: 30px;
 }
 
+#menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(255, 0, 0, 0.95);
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  #menu-toggle {
+    display: block;
+  }
+}
 
         
     </style>
@@ -105,12 +135,13 @@ header h1 {
 <header>
   <div class="header-content">
     <h1>Blaulicht Shots</h1>
-     <nav class="nav-links">
-  <a href="#feuerwehr">🚒 Feuerwehr</a>
-  <a href="#polizei">🚓 Polizei</a>
-</nav>
+    
+    <nav class="nav-links" id="nav-links">
+      <a href="#feuerwehr">🚒 Feuerwehr</a>
+      <a href="#polizei">🚓 Polizei</a>
+    </nav>
 
-
+    <button id="menu-toggle" aria-label="Navigation umschalten">☰</button>
     <button onclick="toggleMode()" id="toggle-button">🌗</button>
   </div>
 </header>
@@ -153,6 +184,10 @@ header h1 {
     <br>
     <p class="version">v1.3.0 - © Maximilian 2025</p>
  <script>
+     document.getElementById('menu-toggle').addEventListener('click', function() {
+  document.getElementById('nav-links').classList.toggle('show');
+});
+
     function toggleMode() {
       document.body.classList.toggle('dark-mode');
     }
@@ -161,6 +196,7 @@ header h1 {
         .then(() => console.log("✅ Service Worker registriert"))
         .catch(err => console.error("❌ Service Worker Fehler", err));
     }
+    
   </script>
 </body>
 </html>
