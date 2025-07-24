@@ -1,5 +1,8 @@
 # Changelog
 
+## [v1.3.0] – 2025-07-24
+- Menü in Header ergänzt, Copyright verschönert
+
 ## [v1.2.0] – 2025-07-24
 - Header verschönert, Interaktivität verbessert
 
