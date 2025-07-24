@@ -30,20 +30,16 @@
             display: block;
             border-radius: 10px;
             transition: 0.3s ease;
-    }
-
-
-        img:active {
-  /*transform: scale(1.8);
-  transition: transform 0.2s ease;
-  z-index: 100;*/
-            position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(2.5);
-  z-index: 9999;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
+
+img:hover {
+  transform: scale(1.05) rotateZ(1deg);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+  filter: brightness(1.1) contrast(1.2);
+  cursor: zoom-in;
+}
+
 header {
   position: sticky;
   top: 0;
