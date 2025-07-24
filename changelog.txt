@@ -1,5 +1,8 @@
 # Changelog
 
+## [v1.2.0] – 2025-07-24
+- Header verschönert, Interaktivität verbessert
+
 ## [v1.1.1] – 2025-07-21
 - Bildvergrößerung optimiert
 
