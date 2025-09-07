@@ -6,6 +6,7 @@ self.addEventListener("install", event => {
         "/galerie.html",
         "/RW-Köln.JPEG",
         "/DLK-Köln.PNG",
+        "BF_Bonn_3-WLF-bea.png",
         "/StLf_1b.JPEG",
         "/BePolv2-mitBL.png",
         "/manifest.json",
@@ -22,3 +23,4 @@ self.addEventListener("fetch", event => {
     })
   );
 });
+
